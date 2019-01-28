@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Hello Jekyll!"
-date: 2019-01-22 18:47:24 -0600
+layout:     post
+title:      "Hello Jekyll!"
+date:       2019-01-22 18:47:24 -0600
 categories: jekyll update
+thumbnail:  smile-beam
 ---
 
 Hey everyone!

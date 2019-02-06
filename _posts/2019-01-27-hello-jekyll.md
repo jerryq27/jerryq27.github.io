@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Hello Jekyll!
-date:       2019-01-22 18:47:24
+date:       2019-01-27 18:47:24
 author:     Jerry Quintero
 categories: jekyll personal
 thumbnail:  smile-beam

@@ -1,9 +1,15 @@
 ---
 layout:     post
-title:      "Hello Jekyll!"
-date:       2019-01-22 18:47:24 -0600
-categories: jekyll update
+title:      Hello Jekyll!
+date:       2019-01-22 18:47:24
+author:     Jerry Quintero
+categories: jekyll personal
 thumbnail:  smile-beam
+tags:
+ - blog
+ - developer's
+ - first
+ - post
 ---
 
 Hey everyone!
@@ -23,7 +29,7 @@ using the default [Minima] theme is fine.
 Lastly, I should probably update some of my social media. I should start off
 by changing the default profile picture GitHub provides:
 
-<img src="{{site.baseurl}}/assets/img/github-default.png" alt="GitHub Profile" height="200" width="200">
+<img src="{{ site.images }}github-default.png" alt="GitHub Profile" height="200" width="200">
 
 I've also changed my GitHub user name to [{{site.github_username}}], 
 which resulted in me having to fix a lot of local git settings, (Mostly just 
@@ -33,7 +39,7 @@ web developer self has lead me to wanting to create a new site. Maybe I should
 actually start using my Twitter account. Currently my profile picture is a banana dog..
 
 <a href="https://twitter.com/jerryq27">
-    <img src="{{site.baseurl}}/assets/img/banana-dog.jpg" alt="Banana Dog" height="200" width="200">
+    <img src="{{ site.images }}banana-dog.jpg" alt="Banana Dog" height="200" width="200">
 </a>
 
 classic. 

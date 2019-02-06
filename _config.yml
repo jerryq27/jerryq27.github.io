@@ -6,6 +6,7 @@ baseurl: ""
 url: ""
 title_description: "Just another developer's blog."
 title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+images: /assets/img/
 google_analytics: "UA-20365477-4"
 disqus_account:
 github_repository: https://github.com/jacobtomlinson/carte-noire

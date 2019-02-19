@@ -8,9 +8,9 @@
     {% if site.xing_link %}
         <a href="{{ site.xing_link }}" target="_new"><i class="fab fa-xing"></i></a>
     {% endif %}
-    {% if site.google_plus_link %}
+    {% comment %} {% if site.google_plus_link %}
         <a href="{{ site.google_plus_link }}" target="_new"><i class="fab fa-google-plus"></i></a>
-    {% endif %}
+    {% endif %} {% endcomment %}
     {% if site.facebook_link %}
         <a href="{{ site.facebook_link }}" target="_new"><i class="fab fa-facebook"></i></a>
     {% endif %}
@@ -27,5 +27,5 @@
         <a href="https://www.reddit.com/u/{{ site.reddit_username }}" target="_new"><i class="fab fa-reddit-alien"></i></a>
     {% endif %}
 
-    <a href="{{ site.baseurl }}/feed.xml" target="_new"><i class="fas fa-rss"></i></a>
+    {% comment %} <a href="{{ site.baseurl }}/feed.xml" target="_new"><i class="fas fa-rss"></i></a> {% endcomment %}
 </p>

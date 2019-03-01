@@ -39,6 +39,7 @@ The following tools and libraries are used in this theme
  * [MMenu](http://mmenu.frebsite.nl/)
  * [HighlightJS](https://highlightjs.org/)
  * [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+ * [Typed.js](https://github.com/mattboldt/typed.js)
 
 ### CSS
  * [Bootstrap](http://getbootstrap.com/)

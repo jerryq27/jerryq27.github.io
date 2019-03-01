@@ -20,7 +20,15 @@
         typeSpeed: 70,
         startDelay: 50,
         cursorChar: '_',
-        autoInsertCss: true,
+        onComplete: function(self) {
+            var secondOptions = {
+                strings: ['{{ site.description }}'],
+                typeSpeed: 70,
+                startDelay: 50,
+                cursorChar: '_',
+            };
+            var secondTyped = new Typed("#site-description", secondOptions);
+        },
     };
 
     var typed = new Typed("#site-title", options);

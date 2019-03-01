@@ -93,9 +93,6 @@ ul {
 	}
 }
 
-// .mm-menu {
-// 	max-width: 350px;
-// }
 
 .clearfix:after {
 	content: " ";
@@ -168,6 +165,14 @@ ul {
 			margin-right: 10px;
 		}
 	}
+}
+
+#back-button {
+	color: $white;
+	font-size: 24px;
+	cursor: pointer;
+	padding-right: 10px;
+	float: right;
 }
 
 .links {

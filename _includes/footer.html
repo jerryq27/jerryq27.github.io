@@ -11,7 +11,20 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.mmenu.min.all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script src="{{ site.baseurl }}/js/typed.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript">
+    var options = {
+        strings: ['{{ site.title }}'],
+        typeSpeed: 70,
+        startDelay: 50,
+        cursorChar: '_',
+        autoInsertCss: true,
+    };
+
+    var typed = new Typed("#site-title", options);
+</script>
 <script type="text/javascript">
     $(document).ready(function($) {
         $("#my-menu").mmenu().on( "closed.mm", function() {

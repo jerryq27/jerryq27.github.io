@@ -16,18 +16,14 @@
 
 <script type="text/javascript">
     var options = {
-        strings: ['{{ site.title }}'],
+        strings: ["{{ site.title }}"],
         typeSpeed: 70,
         startDelay: 50,
-        cursorChar: '_',
-        onComplete: function(self) {
-            var secondOptions = {
-                strings: ['{{ site.description }}'],
-                typeSpeed: 70,
-                startDelay: 50,
-                cursorChar: '_',
-            };
-            var secondTyped = new Typed("#site-description", secondOptions);
+        cursorChar: "_",
+        onComplete: () => {
+            var secondTyped = new Typed("#site-description", {
+                strings: ["{{ site.description }}"],
+            });
         },
     };
 

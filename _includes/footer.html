@@ -20,9 +20,13 @@
         typeSpeed: 70,
         startDelay: 50,
         cursorChar: "_",
+        fadeOut: true,
         onComplete: () => {
             var secondTyped = new Typed("#site-description", {
                 strings: ["{{ site.description }}"],
+                typeSpeed: 50,
+                startDelay: 50,
+                cursorChar: "_",
             });
         },
     };

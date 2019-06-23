@@ -1,6 +1,7 @@
 # jProjects Site
 
-A site for me to talk about my projects, document the work process, and share what I've learned.
+A place for me to talk about my projects, document the work process, and share what I've learned.  
+[Link](https://jerryq27.github.io)
 
 ## Theme
 

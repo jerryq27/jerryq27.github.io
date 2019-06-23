@@ -1,14 +1,12 @@
 # jProjects Site
 
-A site for me to talk about my projects, share what I've learned, and to document the work process.
+A site for me to talk about my projects, document the work process, and share what I've learned.
 
 ## Theme
 
-The site is based on the [Carte Noire](https://github.com/jacobtomlinson/carte-noire) Jekyll theme by [Jacob Tomlinson](https://twitter.com/_jacobtomlinson).
+This site is based on the [Carte Noire](https://github.com/jacobtomlinson/carte-noire) Jekyll theme by [Jacob Tomlinson](https://twitter.com/_jacobtomlinson).
 
 ## Dependencies
-
-The site uses the following dependencies:
 
 ### JavaScript
 

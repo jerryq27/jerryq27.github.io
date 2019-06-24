@@ -6,7 +6,7 @@ baseurl: ""
 url: ""
 title_description: "Just another developer's blog."
 title_image: assets/img/title_image.png
-images: /assets/img/
+images: /assets/img
 google_analytics: "UA-20365477-4"
 disqus_account:
 github_repository: https://github.com/jerryq27/jerryq27.github.io

@@ -17,12 +17,13 @@ $instagram: #cd486b;
 $reddit: #cee3f8;
 $rss: #eea33a;
 
-$darker: #21211E;
 $background-color: #111111; //#2D2D29;
-$content-background-color: #1E1E1E;//#3B3B35;
-$light-medium: #969696;
+$content-background-color: #1E1E1E; //#3B3B35;
+$secondary-text-color: #969696;
 $dark-blue: #215A6D;
 $accent-color: #3CA2A2;
+
+$code-background-color: #302E2D; // #21211E;
 $green: #92C7A3;
 $light: #DFECE6;
 $white: #FFFFFF;
@@ -91,6 +92,14 @@ ul {
 			text-decoration: none;
 		}
 	}
+}
+
+::selection {
+	background: $secondary-text-color;
+}
+
+::-moz-selection {
+	background: $secondary-text-color;
 }
 
 
@@ -334,14 +343,14 @@ ul {
 				font-size: 24px;
 
 				a:hover {
-					color: $light-medium;
+					color: $secondary-text-color;
 				}
 
 				small {
 					font-size: 14px;
 					margin-top: -10px;
 					padding-top: 0px;
-					color: $light-medium;
+					color: $secondary-text-color;
 				}
 
 			}
@@ -629,7 +638,7 @@ ul {
 				width: 100%;
 				margin-left: -15px;
 				padding-right: 10px;
-				background-color: $darker;
+				background-color: $code-background-color;
 				color: white;
 				box-sizing: content-box;
 				border: none;
@@ -649,7 +658,7 @@ ul {
 
 				:before {
 					font-family: "Times New Roman";
-					color: $light-medium;
+					color: $secondary-text-color;
 					content: "“";
 					position: absolute;
 					top: 15px;
@@ -684,7 +693,7 @@ ul {
 				pre {
 					width: 100%;
 					font-family: 'Anonymous Pro';
-					background-color: $darker;
+					background-color: $code-background-color;
 					color: $white;
 					font-size: 12px;
 					border: none;
@@ -713,7 +722,7 @@ ul {
 				code {
 					font-family: 'Anonymous Pro';
 					font-size: 15px;
-					background-color: $darker;
+					background-color: $code-background-color;
 					color: $white;
 					padding: 0.5em;
 					vertical-align: middle;
@@ -773,7 +782,7 @@ ul {
 			font-size: 18px;
 			width: auto;
 			padding: 10px 20px;
-			background-color: $darker;
+			background-color: $code-background-color;
 			box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
 		}
 
@@ -827,13 +836,13 @@ ul {
 	}
 
 	.date {
-		color: $light-medium;
+		color: $secondary-text-color;
 	}
 }
 
 .search-hr {
 	width: 700px;
-	border-color: $light-medium;
+	border-color: $secondary-text-color;
 }
 
 .error {
@@ -874,7 +883,7 @@ ul {
 	}
 
 	div {
-		color: $light-medium;
+		color: $secondary-text-color;
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -924,13 +933,13 @@ table {
 	// margin: 0 auto;
 	border-collapse: collapse;
 	border-spacing: 0;
-	border: 2px solid $darker;
+	border: 2px solid $code-background-color;
 	;
 }
 
 th {
 	padding: 2px;
-	border: 2px solid $darker;
+	border: 2px solid $code-background-color;
 	;
 }
 

@@ -24,9 +24,9 @@ Material Design docs and some code refactoring later:
 
 Now that's a sexy looking dark theme!
 
-Next up, I was enjoying the new look of the site, but highlighting text was giving
+Next up, I was enjoying the new look of the site, but selecting text was giving
 me that default blue we're all used to. I didn't like the look, it was really killing
-the vibe I had going with my site, especially with highlighting code snippets
+the vibe I had going with my site, especially with selecting code snippets
 
 <img src="{{ site.images }}/orig-highlighting.png" alt="Original Highlighting">
 

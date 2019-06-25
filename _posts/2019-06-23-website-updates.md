@@ -46,15 +46,21 @@ site.
 
 I'll be sure to add some more changes in the future!
 
-**Edit:** Oops, turns out the selection highlighting looks different from Chrome to Firefox..
+**Edit:** Oops, turns out the selection color looks different from Chrome to Firefox..
 
 <img src="{{ site.images }}/chrome-firefox-highlighting.png" alt="Chrome Firefox Highlighting">
 
-Welcome to Web Development. Supposedly Chrome was adding a bit of transparancy to the color. Interesting, since checking out the styling from inspect element gave me the exact same color with no alpha:
+_Welcome to Web Development_  
+
+Supposedly, Chrome was adding a bit of transparancy to the color. Interesting,
+since checking out the styling from inspect element gave me the exact same color
+with no alpha:
 
 <img src="{{ site.images }}/inspect-element-selection.png" alt="Inspect Element - Selection">
 
-The color seems to be more accurate in Firefox. I used the secondary text color for the selection color, and it matched up when I selected text using that color on the site. Cleary, Chrome added some transperancy.
+The color seems to be more accurate in Firefox. I used the secondary text color
+for the selection color, and it matched up when I selected text using that color
+on the site. Cleary, Chrome added some transperancy.
 
 > **PUN INTENDED**
 

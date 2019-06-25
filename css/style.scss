@@ -22,6 +22,7 @@ $content-background-color: #1E1E1E; //#3B3B35;
 $secondary-text-color: #969696;
 $dark-blue: #215A6D;
 $accent-color: #3CA2A2;
+$selection-color: rgba(150, 150, 150, 0.4);
 
 $code-background-color: #302E2D; // #21211E;
 $green: #92C7A3;
@@ -95,11 +96,11 @@ ul {
 }
 
 ::selection {
-	background: $secondary-text-color;
+	background: $selection-color;
 }
 
 ::-moz-selection {
-	background: $secondary-text-color;
+	background: $selection-color;
 }
 
 

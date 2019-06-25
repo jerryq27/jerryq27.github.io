@@ -46,6 +46,20 @@ site.
 
 I'll be sure to add some more changes in the future!
 
+(Edit) Oops, turns out the text highlighting looks different from Chrome and Firefox..
+
+<img src="{{ site.images }}/chrome-firefox-highlighting.png" alt="Chrome Firefox Highlighting">
+
+Welcome to Web Development. Supposedly Chrome was adding a bit of transparancy to the color. Interesting, since checking out the styling from inspect element gave me the exact same color with no alpha:
+
+<img src="{{ site.images }}/inspect-element-selection.png" alt="Inspect Element - Selection">
+
+The color seems to be more accurate in Firefox. I used the secondary text color for the selection color, and it matched up when I highlighted text using that color on the site. Cleary Chrome added some transperancy. A bit odd, I might need to keep this in mind when selecting colors in the future. For now, I set the selection color to `rgba(150, 150, 150, 0.4)` which is rendering a more consistent look to the text selection coloring.
+
+<img src="{{ site.images }}/fixed-selection.png" alt="Fixed Selection">
+
+I'm going to have to do some more research on this.
+
 \- Jerry
 
 [Carte Noire]: https://github.com/jacobtomlinson/carte-noire

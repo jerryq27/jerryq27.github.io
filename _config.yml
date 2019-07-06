@@ -37,3 +37,8 @@ kramdown:
 
 permalink: pretty
 exclude: [vendor]
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/

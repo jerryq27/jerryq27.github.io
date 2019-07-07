@@ -325,6 +325,61 @@ ul {
 		font-size: 2em;
 	}
 
+	.projects {
+		text-align: center;
+		font-size: 20px;
+
+		h2 {
+			margin-bottom: 30px;
+			color: $accent-color;
+			font-size: 26px;
+		}
+		h2:hover {
+			color: $dark-blue;
+		}
+
+
+		ul {
+
+			padding: 0px;
+
+			li {
+				margin-bottom: 20px;
+				font-size: 24px;
+
+				a:hover {
+					color: $secondary-text-color;
+				}
+
+				small {
+					font-size: 14px;
+					margin-top: -10px;
+					padding-top: 0px;
+					color: $secondary-text-color;
+				}
+
+			}
+
+			li:nth-last-of-type(1) {
+
+				small {
+					font-size: 16px;
+				}
+
+			}
+		}
+
+		a,
+		a:active {
+			color: $dark-blue;
+			white-space: nowrap;
+		}
+
+		a:hover {
+			color: $dark-blue;
+		}
+	}
+
 	.articles {
 		text-align: center;
 		font-size: 20px;

@@ -10,16 +10,14 @@
 -
   name: JShell
   description: 'My attempt at creating a shell for a school project.'
-  urls:
-    - 'https://github.com/jerryq27/JShell'
+  url: 'https://github.com/jerryq27/JShell'
   skills:
     - C
     - Linux
 -
   name: 'AI Project'
   description: 'AI class project that uses AI search algorithms in a game.'
-  urls:
-    - 'https://github.com/jerryq27/AIProject'
+  url: 'https://github.com/jerryq27/AIProject'
   skills:
     - Java
     - 'Game Development'
@@ -38,8 +36,7 @@
 -
   name: Hangman
   description: 'Hangman game created in Flutter.'
-  urls: 
-    - 'https://github.com/jerryq27/Hangman'
+  url: 'https://github.com/jerryq27/Hangman'
   skills:
     - Flutter
     - Dart
@@ -49,8 +46,7 @@
 -
   name: CodeEval
   description: 'My solutions for the CodeEval Challenges.'
-  urls:
-    - 'https://github.com/jerryq27/CodeEval'
+  url: 'https://github.com/jerryq27/CodeEval'
   skills:
     - Java
     - Python
@@ -60,7 +56,6 @@
 -
   name: 'Book Challenges'
   description: 'Solving chapter summary problems in various books.'
-  urls:
-    - 'https://github.com/jerryq27/BookChallenges'
+  url: 'https://github.com/jerryq27/BookChallenges'
   skills:
     - Java

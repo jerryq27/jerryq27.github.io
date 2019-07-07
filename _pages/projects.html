@@ -4,14 +4,22 @@ make-smaller-titles: true
 ---
 
 <div class="container-fluid index">
+    <h1 class="header" itemprop="headline">Projects</h1>
 
-{% for project in site.data.projects %}
+    {% for project in site.data.projects %}
+        <div class="col index projects">
+            <div class="content-panel content">
 
-    <div class="col-md-12 main content-panel">
-        <h2 class="header">{{ project.name }}</h2>
-        {{ project.description }}
-    </div>
+                {% if project.url %}
+                    <a href="{{ project.url }}"><h2 class="header">{{ project.name }}</h2></a>
+                {% else %}
+                    <h2 class="header">{{ project.name }}</h2>
+                {% endif %}
 
-{% endfor %}
+                <p class="lead">{{ project.description }}</p>
+                
+            </div>
+        </div>
+    {% endfor %}
 
 </div>

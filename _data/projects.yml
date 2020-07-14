@@ -1,12 +1,17 @@
 -
   name: 'DuckyScript Syntax Grammar'
-  description: 'Syntax grammar for the Atom and Sublime text editors.'
+  description: 'DuckyScript grammar definitions for syntax highlighting with popular text editors.'
   urls:
-    - 'https://github.com/jerryq27/Atom-DuckyScript'
-    - 'https://github.com/jerryq27/Sublime-DuckyScript'
+    - 
+      title: Atom
+      link: 'https://github.com/jerryq27/Atom-DuckyScript'
+    - 
+      title: 'Sublime Text'
+      link: 'https://github.com/jerryq27/Sublime-DuckyScript'
   skills:
     - CSON
     - YAML
+  color: "#ee0290"
 -
   name: JShell
   description: 'My attempt at creating a shell for a school project.'
@@ -14,6 +19,7 @@
   skills:
     - C
     - Linux
+  color: "#90ee02"
 -
   name: 'AI Project'
   description: 'AI class project that uses AI search algorithms in a game.'
@@ -21,6 +27,7 @@
   skills:
     - Java
     - 'Game Development'
+  color: "#d602ee"
 -
   name: 'JProjects Site'
   description: 'A personal blog for the rest of my projects.'
@@ -33,6 +40,7 @@
     - SASS
     - CSS
     - YAML
+  color: "#ee6002"
 -
   name: Hangman
   description: 'Hangman game created in Flutter.'
@@ -42,6 +50,7 @@
     - Dart
     - 'Mobile Development'
     - 'Game Development'
+  color: "#ee0290"
 
 -
   name: CodeEval
@@ -53,9 +62,11 @@
     - Ruby
     - C/C++
     - Go
+  color: "#ee0290"
 -
   name: 'Book Challenges'
   description: 'Solving chapter summary problems in various books.'
   url: 'https://github.com/jerryq27/BookChallenges'
   skills:
     - Java
+  color: "#ee0290"

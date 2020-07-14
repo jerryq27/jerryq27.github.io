@@ -17,6 +17,13 @@ make-smaller-titles: true
                 {% endif %}
 
                 <p class="lead">{{ project.description }}</p>
+                {% if project.urls %}
+                <ul>
+                    {% for url in project.urls %}
+                        <li><a href="{{ url.link }}">{{ url.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
                 
             </div>
         </div>

@@ -21,7 +21,7 @@ make-smaller-titles: true
             {% include social_links.html %}
         </div>
         
-        <div class="col-md-12 main content-panel">
+        <!-- <div class="col-md-12 main content-panel">
             <div class="articles">
                 <h2>Latest Posts</h2>
                 <ul>
@@ -33,6 +33,23 @@ make-smaller-titles: true
                     {% endfor %}
                     <li>
                         <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+        <div class="col-md-12 main content-panel">
+            <div class="articles">
+                <h2>Projects</h2>
+                <ul>
+                    {% for project in site.data.projects limit:4 %}
+                        <li>
+                            <a href="{{ project.url | prepend: site.baseurl }}">{{ project.name }}</a>
+                            <!-- <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> -->
+                        </li>
+                    {% endfor %}
+                    <li>
+                        <small><i><a href="{{ site.baseurl }}/projects/">more...</a></i></small>
                     </li>
                 </ul>
             </div>

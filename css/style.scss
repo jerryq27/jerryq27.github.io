@@ -1,7 +1,4 @@
---- 
---- 
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+--- --- @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
 
@@ -199,7 +196,8 @@ ul {
 		}
 	}
 
-	.fab, .fas {
+	.fab,
+	.fas {
 		-webkit-transition: 0.3s;
 		-moz-transition: 0.3s;
 		transition: 0.3s;
@@ -334,6 +332,7 @@ ul {
 			color: $accent-color;
 			font-size: 26px;
 		}
+
 		h2:hover {
 			color: $dark-blue;
 		}
@@ -765,7 +764,6 @@ ul {
 					@media (min-width: $screen-sm-min) {
 						padding-left: 15px;
 						padding-right: 10px;
-						// margin-bottom: 40px;
 						font-size: 20px;
 					}
 				}

@@ -1,7 +1,8 @@
 -
   name: 'DuckyScript Syntax Grammar'
   description: 'DuckyScript grammar definitions for syntax highlighting with popular text editors.'
-  urls:
+  url: '/projects/DuckyScript Syntax Grammar'
+  repos:
     - 
       title: Atom
       link: 'https://github.com/jerryq27/Atom-DuckyScript'
@@ -15,7 +16,8 @@
 -
   name: JShell
   description: 'My attempt at creating a shell for a school project.'
-  url: 'https://github.com/jerryq27/JShell'
+  url: '/projects/JShell'
+  repo: 'https://github.com/jerryq27/JShell'
   skills:
     - C
     - Linux
@@ -23,7 +25,8 @@
 -
   name: 'AI Project'
   description: 'AI class project that uses AI search algorithms in a game.'
-  url: 'https://github.com/jerryq27/AIProject'
+  url: '/projects/AI Project'
+  repo: 'https://github.com/jerryq27/AIProject'
   skills:
     - Java
     - 'Game Development'
@@ -31,7 +34,8 @@
 -
   name: 'JProjects Site'
   description: 'A personal blog for the rest of my projects.'
-  url: 'https://github.com/jerryq27/jerryq27.github.io'
+  url: '/projects/JProjects Site'
+  repo: 'https://github.com/jerryq27/jerryq27.github.io'
   skills:
     - Jekyll
     - Ruby
@@ -44,7 +48,8 @@
 -
   name: Hangman
   description: 'Hangman game created in Flutter.'
-  url: 'https://github.com/jerryq27/Hangman'
+  url: '/projects/Hangman'
+  repo: 'https://github.com/jerryq27/Hangman'
   skills:
     - Flutter
     - Dart
@@ -55,7 +60,8 @@
 -
   name: CodeEval
   description: 'My solutions for the CodeEval Challenges.'
-  url: 'https://github.com/jerryq27/CodeEval'
+  url: '/projects/CodeEval'
+  repo: 'https://github.com/jerryq27/CodeEval'
   skills:
     - Java
     - Python
@@ -66,7 +72,8 @@
 -
   name: 'Book Challenges'
   description: 'Solving chapter summary problems in various books.'
-  url: 'https://github.com/jerryq27/BookChallenges'
+  url: '/projects/Book Challenges'
+  repo: 'https://github.com/jerryq27/BookChallenges'
   skills:
     - Java
   color: "#ee0290"

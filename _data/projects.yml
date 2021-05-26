@@ -1,10 +1,17 @@
 -
+  name: 'Replayer (Demo)'
+  description: 'A music player designed for dancers.'
+  url: '/projects/Replayer-Demo'
+  repo: 'https://github.com/jerryq27/Replayer/tree/demo'
+  icon: 'play-circle'
+  color: '#90ee02'
+-
   name: 'DuckyScript Syntax Grammar'
   description: 'DuckyScript grammar definitions for syntax highlighting with popular text editors.'
   url: '/projects/DuckyScript Syntax Grammar'
   repos:
     - 
-      title: Atom
+      title: 'Atom'
       link: 'https://github.com/jerryq27/Atom-DuckyScript'
     - 
       title: 'Sublime Text'
@@ -12,16 +19,18 @@
   skills:
     - CSON
     - YAML
-  color: "#ee0290"
+  icon: 'code'
+  color: '#ee0290'
 -
-  name: JShell
+  name: 'JShell'
   description: 'My attempt at creating a shell for a school project.'
   url: '/projects/JShell'
   repo: 'https://github.com/jerryq27/JShell'
   skills:
     - C
     - Linux
-  color: "#90ee02"
+  icon: 'terminal'
+  color: '#90ee02'
 -
   name: 'AI Project'
   description: 'AI class project that uses AI search algorithms in a game.'
@@ -30,7 +39,8 @@
   skills:
     - Java
     - 'Game Development'
-  color: "#d602ee"
+  icon: 'robot'
+  color: '#d602ee'
 -
   name: 'JProjects Site'
   description: 'A personal blog for the rest of my projects.'
@@ -44,9 +54,10 @@
     - SASS
     - CSS
     - YAML
-  color: "#ee6002"
+  icon: 'laptop-code'
+  color: '#ee6002'
 -
-  name: Hangman
+  name: 'Hangman'
   description: 'Hangman game created in Flutter.'
   url: '/projects/Hangman'
   repo: 'https://github.com/jerryq27/Hangman'
@@ -55,10 +66,10 @@
     - Dart
     - 'Mobile Development'
     - 'Game Development'
-  color: "#ee0290"
-
+  icon: 'male'
+  color: '#ee0290'
 -
-  name: CodeEval
+  name: 'CodeEval'
   description: 'My solutions for the CodeEval Challenges.'
   url: '/projects/CodeEval'
   repo: 'https://github.com/jerryq27/CodeEval'
@@ -68,7 +79,8 @@
     - Ruby
     - C/C++
     - Go
-  color: "#ee0290"
+  icon: 'file-code'
+  color: '#ee0290'
 -
   name: 'Book Challenges'
   description: 'Solving chapter summary problems in various books.'
@@ -76,4 +88,5 @@
   repo: 'https://github.com/jerryq27/BookChallenges'
   skills:
     - Java
-  color: "#ee0290"
+  icon: 'book'
+  color: '#ee0290'

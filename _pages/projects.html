@@ -16,7 +16,8 @@ make-smaller-titles: true
                     <h2 class="header">{{ project.name }}</h2>
                 {% endif %}
 
-                <p class="lead">{{ project.description }}</p>
+                <span class="lead">{{ project.description }}</span>
+
                 {% if project.urls %}
                 <ul>
                     {% for url in project.urls %}
@@ -25,6 +26,11 @@ make-smaller-titles: true
                 </ul>
                 {% endif %}
                 
+                {% if project.icon %}
+                    <div class="thumb project-icon">
+                        <i class="fas fa-{{ project.icon }} fa-2x" style="margin: 0"></i>
+                    </div>
+                {% endif %}
             </div>
         </div>
     {% endfor %}

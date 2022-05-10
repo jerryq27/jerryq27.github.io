@@ -71,6 +71,11 @@ ul {
 	list-style-type: none;
 }
 
+.disabled-link {
+	pointer-events: none;
+	cursor: default;
+}
+
 .navbar,
 .nav {
 	background-color: $dark-blue;

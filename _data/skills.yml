@@ -1,0 +1,68 @@
+-
+  name: Java
+  category: language
+  icon: ☕
+- 
+  name: Python
+  category: langauge
+  icon: 🐍
+- 
+  name: React
+  category: framework
+  icon: ⚛️
+- 
+  name: Vue
+  category: framework
+  icon: ⛛
+-
+  name: Jekyll
+  category: tool
+  icon: 🧪
+-
+  name: Django
+  category: framework
+  icon: 🦄
+-
+  name: Solidity
+  category: language
+  icon: ♦️
+-
+  name: JavaScript
+  category: langauge
+  icon: JS
+- 
+  name: TypeScript
+  category: langauge
+  icon: TS
+-
+  name: Linux
+  category: os
+  icon: 🐧
+-
+  name: C/C++
+  category: langauge
+  icon: 🖥️
+-
+  name: Flutter
+  category: framework
+  icon: 🕊️
+-
+  name: Android
+  category: framework
+  icon: 🤖
+-
+  name: Unity
+  category: tool
+  icon: 🎲
+- 
+  name: Ruby
+  category: language
+  icon: 💎
+-
+  name: C#
+  category: language
+  icon: #️⃣
+-
+  name: Dart
+  category: langauge
+  icon: 🎯

@@ -1,38 +1,41 @@
 ---
 layout: default
-make-smaller-titles: true
 ---
-
+    
 <div class="container-fluid index">
     <h1 class="header" itemprop="headline">Projects</h1>
-
     {% for project in site.data.projects %}
-        <div class="col index projects">
-            <div class="content-panel content">
-
-                {% if project.url %}
-                    <a href="{{ project.url }}"><h2 class="project-header">{{ project.name }}</h2></a>
-                {% else %}
-                    <h2 class="header">{{ project.name }}</h2>
-                {% endif %}
-
-                <span class="lead">{{ project.description }}</span>
-
-                {% if project.urls %}
-                <ul>
-                    {% for url in project.urls %}
-                        <li><a href="{{ url.link }}">{{ url.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-                
-                {% if project.icon %}
-                    <div class="thumb project-icon">
-                        <i class="fas fa-{{ project.icon }} fa-2x" style="margin: 0"></i>
-                    </div>
-                {% endif %}
+        {% assign x = forloop.index | modulo: 2 %}
+        {% if x != 0 %}
+            <div class="row projects">
+                <div class="col content-panel floating-project">
+                    {% if project.url %}
+                        <a href="{{ project.url }}"><h2 class="project-header">{{ project.name }}</h2></a>
+                    {% else %}
+                        <h2 class="header">{{ project.name }}</h2>
+                    {% endif %}
+                    <span class="lead">{{ project.description }}</span>
+                    {% if project.icon %}
+                        <div class="thumb project-icon">
+                            <i class="fas fa-{{ project.icon }} fa-2x" style="margin: 0"></i>
+                        </div>
+                    {% endif %}
+                </div>
+        {% else %}
+                <div class="col content-panel floating-project">
+                    {% if project.url %}
+                        <a href="{{ project.url }}"><h2 class="project-header">{{ project.name }}</h2></a>
+                    {% else %}
+                        <h2 class="header">{{ project.name }}</h2>
+                    {% endif %}
+                    <span class="lead">{{ project.description }}</span>
+                    {% if project.icon %}
+                        <div class="thumb project-icon">
+                            <i class="fas fa-{{ project.icon }} fa-2x" style="margin: 0"></i>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
-        </div>
+        {% endif %}
     {% endfor %}
-
 </div>

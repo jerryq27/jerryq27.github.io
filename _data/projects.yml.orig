@@ -1,0 +1,92 @@
+-
+  name: 'Replayer (Demo)'
+  description: 'A music player designed for dancers.'
+  url: '/projects/Replayer-Demo'
+  repo: 'https://github.com/jerryq27/Replayer/tree/demo'
+  icon: 'play-circle'
+  color: '#90ee02'
+-
+  name: 'DuckyScript Syntax Grammar'
+  description: 'DuckyScript grammar definitions for syntax highlighting with popular text editors.'
+  url: '/projects/DuckyScript Syntax Grammar'
+  repos:
+    - 
+      title: 'Atom'
+      link: 'https://github.com/jerryq27/Atom-DuckyScript'
+    - 
+      title: 'Sublime Text'
+      link: 'https://github.com/jerryq27/Sublime-DuckyScript'
+  skills:
+    - CSON
+    - YAML
+  icon: 'code'
+  color: '#ee0290'
+-
+  name: 'JShell'
+  description: 'My attempt at creating a shell for a school project.'
+  url: '/projects/JShell'
+  repo: 'https://github.com/jerryq27/JShell'
+  skills:
+    - C
+    - Linux
+  icon: 'terminal'
+  color: '#90ee02'
+-
+  name: 'AI Project'
+  description: 'AI class project that uses AI search algorithms in a game.'
+  url: '/projects/AI Project'
+  repo: 'https://github.com/jerryq27/AIProject'
+  skills:
+    - Java
+    - 'Game Development'
+  icon: 'robot'
+  color: '#d602ee'
+-
+  name: 'JProjects Site'
+  description: 'A personal blog for the rest of my projects.'
+  url: '/projects/JProjects Site'
+  repo: 'https://github.com/jerryq27/jerryq27.github.io'
+  skills:
+    - Jekyll
+    - Ruby
+    - JavaScript
+    - HTML
+    - SASS
+    - CSS
+    - YAML
+  icon: 'laptop-code'
+  color: '#ee6002'
+-
+  name: 'Hangman'
+  description: 'Hangman game created in Flutter.'
+  url: '/projects/Hangman'
+  repo: 'https://github.com/jerryq27/Hangman'
+  skills:
+    - Flutter
+    - Dart
+    - 'Mobile Development'
+    - 'Game Development'
+  icon: 'male'
+  color: '#ee0290'
+-
+  name: 'CodeEval'
+  description: 'My solutions for the CodeEval Challenges.'
+  url: '/projects/CodeEval'
+  repo: 'https://github.com/jerryq27/CodeEval'
+  skills:
+    - Java
+    - Python
+    - Ruby
+    - C/C++
+    - Go
+  icon: 'file-code'
+  color: '#ee0290'
+-
+  name: 'Book Challenges'
+  description: 'Solving chapter summary problems in various books.'
+  url: '/projects/Book Challenges'
+  repo: 'https://github.com/jerryq27/BookChallenges'
+  skills:
+    - Java
+  icon: 'book'
+  color: '#ee0290'

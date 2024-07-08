@@ -1,0 +1,16 @@
+services:
+  jekyll:
+    image: ruby:3.4-rc
+    container_name: ghpages_jekyll
+    working_dir: /app
+    volumes:
+      - .:/app
+      - dependencies:/usr/local/bundle
+    ports:
+      - 4000:4000
+      - 4001:4001
+    restart: always
+    command: "jekyll serve --host 0.0.0.0 --livereload-port 4001 --livereload"
+volumes:
+  dependencies: {}
+

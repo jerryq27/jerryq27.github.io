@@ -1,7 +1,7 @@
 services:
   jekyll:
     image: ruby:3.4-rc
-    container_name: temp-ghpages_jekyll
+    container_name: ghpages_jekyll
     working_dir: /app
     volumes:
       - .:/app
@@ -10,7 +10,7 @@ services:
       - 4000:4000
       - 4001:4001
     restart: always
-    command: "bash init.sh" #"jekyll serve --host 0.0.0.0 --livereload-port 4001 --livereload"
+    command: "jekyll serve --host 0.0.0.0 --livereload-port 4001 --livereload"
 volumes:
   dependencies: {}
 

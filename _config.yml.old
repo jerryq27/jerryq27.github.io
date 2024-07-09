@@ -1,0 +1,39 @@
+# Site settings
+title: jProjects
+email: jerryq27@gmail.com
+description: "My corner of the web to discuss my projects :)"
+baseurl: ""
+url: ""
+title_description: "My project site"
+title_image: assets/img/title_image.png
+images: /assets/img
+google_analytics: "UA-20365477-4"
+disqus_account:
+github_repository: https://github.com/jerryq27/jerryq27.github.io
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
+
+# Social usernames/URLs
+twitter_link: https://www.twitter.com/jerryq27
+github_link: https://github.com/jerryq27
+instagram_link: https://www.instagram.com/jerryq27
+reddit_link:
+linkedin_link: https://www.linkedin.com/in/gerardo-jerry-quintero-3aab4010a/
+stackoverflow_link: https://stackoverflow.com/users/4052494/jerryq27
+xing_link:
+facebook_link:
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+permalink: pretty
+exclude: [vendor]

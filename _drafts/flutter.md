@@ -2,7 +2,7 @@
 layout: post
 title: Flutter
 date: 2019-06-19 23:19:45
-categories: development android flutter
+categories: flutter
 thumbnail: feather-alt
 ---
 

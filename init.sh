@@ -13,4 +13,4 @@ else
     bundle install
 fi
 
-jekyll serve --host 0.0.0.0 --livereload-port 4001 --livereload
+jekyll serve --host 0.0.0.0 --livereload-port 4001 --livereload --drafts

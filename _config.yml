@@ -15,7 +15,7 @@ timezone: America/Chicago
 # ↓ --------------------------
 
 title: jProjects # the main title
-tagline: My little corner of the web # it will display as the sub-title
+tagline: Just my little corner of the web # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Developer site where I discuss life, my projects, the things I've learned in

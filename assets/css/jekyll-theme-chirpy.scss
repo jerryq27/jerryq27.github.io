@@ -1,0 +1,27 @@
+---
+---
+
+@import 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+$link-hover-color: rgb(116, 178, 243);
+
+/* append your custom style below */
+#topbar #breadcrumb a:hover,      /* Bread crumbs at the top */
+#access-lastmod a:hover,          /* Right bar, Recently Updated links */
+.content a:not(.img-link):hover,  /* Markdown header links */
+.post-meta a:not([class]):hover,  /* Markdown author*/
+footer a:hover {                  /* Footer links */
+  color: $link-hover-color !important;
+  border-bottom: 1px solid $link-hover-color;
+  text-decoration: none;
+}
+
+/* About page picture. */
+img[src="/assets/img/jerry.jpg"] {
+  border-radius: 50% !important;
+  box-shadow: var(--avatar-border-color) 0 0 0 2px;
+}

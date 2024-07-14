@@ -24,13 +24,13 @@ order: 6
 Worked on projects for a variety of clients:
 
 1. [Cash-Wa](https://web.cashwa.com/)
-  - Worked remotely with a team of contractors to redesign their customer portal
+  - Coordinated remotely with a team of contractors to redesign the customer portal
   - Used Atlassian tools such as Jira, Confluence, and Bitbucket for managing the project
-  - Tech stack involved MySQL, WordPress+Roots, and Vue3
+  - Utilized technologies such as MySQL, WordPress + Roots, and Vue
 1. [NR Connections](https://nrconnections.com/)
   - Designed WordPress plugins to meet the needs of the business and handle their subscription models
   - Setup Cloudflare to manage DNS records, block unwanted requests, and human verification for forms
-  - Tech stack involved is MySQL, WordPress, and Vue3
+  - Tech stack involved MySQL, WordPress, and Vue3
 
 Other tools used: Git, Docker, SSH, Bash  
 
@@ -41,6 +41,7 @@ Other tools used: Git, Docker, SSH, Bash
   - Tools used by sales, underwriters, or C-level executives
   - CMS tools for the intranet maintainers
   - Work with IT and the software team to tickets that could be handed off to us
+- Developed a browser plugin in Vue to help underwriters perform common searches on multiple sites
 - Gained remote work experience during the pandemic
 - Advance use of tools such as Salesforce, Microsoft Excel, Microsoft Access, and PowerBI
 
@@ -58,7 +59,7 @@ Worked on projects for a variety of clients:
   - Integrated Google Cloud Storage to store attachments tied to the Access application such as PDFs
 
 1. [Simple Laundry Technology](https://simplelaundrytechnology.com/)
-  - Created an Android application to track customer laundry being picked up by company trucks
+  - Developed an Android application to track customer laundry being picked up by company trucks
   - Used a Groker RFID scanner to scan tags sewn into clothes
   - Used Groker's API get the RFID Scanner working with Android
   - Designed a SQLite database to store scan information from laundry tags and data from company servers

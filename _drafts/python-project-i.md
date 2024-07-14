@@ -3,6 +3,11 @@ title: The Basics of Python
 description: A simple overview for my friends who've shown interest in learning Python.
 date: 2024-07-11 05:48:21 +0000
 ---
+# Python Project I 
+
+
+Write a program that takes the following [file](old/README.md.old) full of codes and
+convert it to ASCII. 
 
 ## Prerequisites
 
@@ -10,54 +15,6 @@ Here's everything you need to get started coding in Python on Linux
 
 - a text editor - to write your programs in
 - a terminal - to run your programs
-
-## Using the terminal
-
-Don't let the terminal scare you, it's just a text-based way to interact with your system.
-You do this all the time graphically.
-
-Here are the basic commands you'll need to know for this guide:
-
-- `pwd` - "print working directory" which is nerd speak for "show me the current folder I'm in" 
-- `cd` - Stands for "change directory", in other words, "change into a different folder".
-- `ls` - "List", or "List the files and folders in the current folder I'm in"
-- `python` - run the Python interpreter
-
-> The terms "folder" and "directory" can usually be used interchangeably, but the Linux crowd prefers directory
-
-## Your first program
-
-Open up your text editor and add the following:
-
-```python
-print("Hello, world!")
-```
-
-Save that file somewhere as `my_first_program.py`. Great! Now, how do we run it?
-We're going to have to get the _Python Interpreter_ to read the file and run the program (_interpret_ the code!).
-So how do we get the Python Interpreter to do that?
-
-With the terminal! First, lets find the file you just saved:
-
-```sh
-cd folder/where/you/saved/the/code
-ls
-```
-
-You should see your file `my_first_program.py` after you run the `ls` command.
-
-> If you don't, you're in the wrong folder. Use `pwd` to tell you which folder you're in.
-Also make sure you did save the file in a folder and you know where it's located.
-
-Now that you're in the same folder as your file, we can call the Python interpreter!
-To get the interpreter to read your file, use the `python` command:
-
-```sh
-python my_first_program.py
-```
-
-Hit enter, and you should see the terminal display "Hello, world!".
-Congratulations! You just ran your first Python program!
 
 ## Coding in Python
 
@@ -118,7 +75,7 @@ Numbers aren't the only data type you will work with in Python. There are 4 basi
 - Numbers - as you may have guessed, are whole numbers
 - Floats - these are decimal numbers
 - Strings - text data, a "string" of characters
-- Booleans - can only be two values, true and false
+- Booleans - can only be one of two values, True or False
 
 Here are some examples:
 
@@ -148,3 +105,96 @@ If you're confused why you got an error, that's because you're trying to
 do math between a number and a string. Math can only be done between numbers,
 and in Python, the value `5` is not equal to `"5"` because `5` is a numerical
 value, and `"5"` is just a piece of text.
+
+> Math between number values can be done with `+` for addition, `-` for
+subtraction, `*` for multiplication, `/` for division, and `%` for division
+when you want the _remainder_.
+
+## Conditional
+
+Sometimes when writing code, you want run code under certain conditions,
+and other code for when those conditions aren't met. This is where
+conditionals come in:
+
+```python
+my_number = 5
+
+if my_number % 2 == 0:
+  print("The number is even")
+else:
+  print("The number is odd")
+```
+
+Notice a couple things here:
+
+1. We are using the equality operator `==` to compare the result of `my_number % 2` and `0`
+1. The equality operator `==` is different from the assignment operator `=`
+  - `=` assigns a value to a variable
+  - `==` checks if two values are equal and returns a boolean (True or False)
+
+Other operators you can use in conditionals are:
+
+- `<` - less than
+- `>` - greater than
+- `<=` - less than or equal to
+- `>=` - greater than or equal to
+- `==` - equal to
+- `!=` - not equal to
+
+There are other times when you may want your code to have multiple conditions. That's
+where the logical operators `and` and `or` come in:
+
+```python
+test_score = 94
+
+if test_score <= 100 and test_score >= 92:
+  print("A")
+elif test_score <= 91 and test_score >= 82:
+  print("B")
+elif test_score <= 81 and test_score >= 72:
+  print("C")
+elif test_score <= 71 and test_score >= 65:
+  print("D")
+else:
+  print("F")
+```
+
+Remember that these expressions just return a boolean (True or False).
+Here's a simple comparison list of boolean values with the logical operators:
+
+- True and True = True
+- True and False = False
+- False and True = False
+- False and False = False
+- True or True = True
+- True or False = True
+- False or True = True
+- False or False = False
+
+## Loops
+
+To better understand a loop, let's first introduce a data structure, a list.
+Let's say you want to create a program to display a list of errands. You may think
+to write:
+
+```python
+errand_1 = "Take out the trash"
+errand_2 = "Wash the dishes"
+errand_3 = "Clean your room"
+...
+errand_20 = "Meal prep"
+```
+
+This would would make your code difficult to work with. It's time consuming to write,
+and it's creating too many unnecessary variables. This is where a list comes in handy.
+Lists can be defined in Python using the `[]` braces:
+
+```python
+errands = [
+  "Take out the trash",
+  "Wash the dishes",
+  "clean your room,
+  ...
+  "Meal prep",
+]
+```

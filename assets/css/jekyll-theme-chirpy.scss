@@ -10,11 +10,12 @@
 $link-hover-color: rgb(116, 178, 243);
 
 /* append your custom style below */
-#topbar #breadcrumb a:hover,      /* Bread crumbs at the top */
-#access-lastmod a:hover,          /* Right bar, Recently Updated links */
-.content a:not(.img-link):hover,  /* Markdown header links */
-.post-meta a:not([class]):hover,  /* Markdown author*/
-footer a:hover {                  /* Footer links */
+#topbar #breadcrumb a:hover,                   /* Bread crumbs at the top */
+#access-lastmod a:hover,                       /* Right bar, Recently Updated links */
+.content a:not(.img-link):hover,               /* Markdown header links */
+.post-meta a:not([class]):hover,               /* Markdown author */
+.post-tail-wrapper .license-wrapper > a:hover, /* License in post footer links */
+footer a:hover {                               /* Footer links */
   color: $link-hover-color !important;
   border-bottom: 1px solid $link-hover-color;
   text-decoration: none;
@@ -24,4 +25,13 @@ footer a:hover {                  /* Footer links */
 img[src="/assets/img/jerry.jpg"] {
   border-radius: 50% !important;
   box-shadow: var(--avatar-border-color) 0 0 0 2px;
+}
+
+/* Sidebar Navigation Links */
+#sidebar ul li.nav-item a.nav-link {
+  border: 1px solid transparent;
+}
+#sidebar ul li.nav-item a.nav-link:hover {
+  transition: all .3s ease-in-out;
+  border: 1px solid $link-hover-color;
 }

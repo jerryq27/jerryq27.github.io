@@ -9,8 +9,9 @@ services:
     ports:
       - 4000:4000
       - 4001:4001
+    # user: 1000:1000
     restart: always
-    command: "bash init.sh"
+    command: ["bash", "init.sh"]
 volumes:
   dependencies: {}
 

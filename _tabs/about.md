@@ -6,8 +6,8 @@ order: 4
 ---
 ![Jerry](jerry.jpg){: .rounded-circle }
 
-My name is Gerardo Quintero, but I prefer to go by Jerry. I am a graduate from
-the University of Nebraska at Kearney with a bachelor's in Computer Science.
+My name is Gerardo Quintero, but I prefer to go by Jerry. I've graduated from
+the University of Nebraska at Kearney and have a bachelor's in Computer Science.
 I'm currently self-employed as a Full Stack developer for my company, JerryQ LLC.
 It's safe to say that I do enjoy working with software and my future career goals
 are within that field. I also have an interest in teaching about programming

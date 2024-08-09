@@ -7,17 +7,34 @@
 {%- endif -%}
 ';
 
-$link-hover-color: rgb(116, 178, 243);
-
 /* append your custom style below */
+
+$link-hover-color: rgb(116, 178, 243);
+$selection-color: rgba(150, 150, 150, 0.25);
+
+/* Site-wide highlight color */
+::selection,
+::-moz-selection {
+  background: $selection-color;
+}
+
+/* Change link colors from orange to blue */
 #topbar #breadcrumb a:hover,                   /* Bread crumbs at the top */
 #access-lastmod a:hover,                       /* Right bar, Recently Updated links */
 .content a:not(.img-link):hover,               /* Markdown header links */
+#page-tag a:hover,                             /* Tag links */
 .post-meta a:not([class]):hover,               /* Markdown author */
 .post-tail-wrapper .license-wrapper > a:hover, /* License in post footer links */
 footer a:hover {                               /* Footer links */
   color: $link-hover-color !important;
   border-bottom: 1px solid $link-hover-color;
+  text-decoration: none;
+}
+
+/* Fix links without hover underline */
+#archives a:hover {
+  color: #74b2f3 !important;
+  border-bottom: 1px solid #74b2f3;
   text-decoration: none;
 }
 
@@ -28,10 +45,17 @@ img[src="/assets/img/jerry.jpg"] {
 }
 
 /* Sidebar Navigation Links */
-#sidebar ul li.nav-item a.nav-link {
+#sidebar ul li.nav-item a.nav-link,
+article.card-wrapper a {
   border: 1px solid transparent;
 }
-#sidebar ul li.nav-item a.nav-link:hover {
+/*
+#sidebar ul li.nav-item.active .nav-link {
+  border: 1px solid $link-hover-color;
+}
+*/
+#sidebar ul li.nav-item a.nav-link:hover, 
+article.card-wrapper a:hover {
   transition: all .3s ease-in-out;
   border: 1px solid $link-hover-color;
 }

@@ -1,3 +1,8 @@
+---
+categories: [Project, WebDev]
+tags: [python, featured]
+---
+
 # HTTP Server
 
 This is my first project from CodeCrafters. Their catalog of project challenges are definitely up my alley.

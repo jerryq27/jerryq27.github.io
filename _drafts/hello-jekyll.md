@@ -7,9 +7,9 @@ categories: jekyll personal
 thumbnail:  smile-beam
 tags:
  - blog
- - developer's
- - first
- - post
+ - PHP
+ - JavaScript
+ - Vue
 ---
 
 Hey everyone!

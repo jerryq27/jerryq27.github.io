@@ -1,0 +1,64 @@
+#  Sharing options at the bottom of the post.
+#  Icons from <https://fontawesome.com/>
+
+languages:
+  python:
+    name: Python
+    tag: python
+    icon: "fa-brands fa-python"
+    link: "tags/python"
+  php:
+    name: PHP
+    tag: php
+    icon: "fa-brands fa-php"
+    link: "tags/php"
+  js:
+    name: JavaScript
+    tag: js
+    icon: "fa-brands fa-js"
+    link: "tags/javascript"
+  java:
+    name: Java
+    tag: java
+    icon: "fa-brands fa-java"
+    link: "tags/java"
+  c:
+    name: C
+    tag: c
+    icon: "fa-solic fa-c"
+    link: "tags/c"
+  sql:
+    name: SQL
+    tag: sql
+    icon: "fa-solid fa-database"
+    link: "tags/sql"
+
+frameworks:
+  vue:
+    name: Vue
+    tag: vue
+    icon: "fa-brands fa-vuejs"
+    link: "tags/vue"
+  react:
+  wordpress:
+  laravel:
+  jquery:
+  typescript:
+
+tools:
+  git:
+    name: Git
+    tag: git
+    icon: "fa-brands fa-git-alt"
+    link: "tags/git"
+  docker:
+    name: Docker
+    tag: docker
+    icon: "fa-brands fa-docker"
+    link: "tags/docker"
+  jira:
+    name: Jira
+    tag: jira
+    icon: "fa-brands fa-jira"
+    link: "/tags/jira"
+

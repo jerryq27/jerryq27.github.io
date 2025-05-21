@@ -1,17 +1,17 @@
 services:
-  jekyll:
-    image: ruby:3.4-rc
-    container_name: ghpages_jekyll
-    working_dir: /app
+  jprojects-site:
+    image: env_webdev
+    container_name: projects_jprojects-site
+    pull_policy: missing
+    stdin_open: true
+    tty: true
+    user: "1000:1000"
     volumes:
-      - .:/app
+      - ./:/home/webdev/app/
       - dependencies:/usr/local/bundle
     ports:
       - 4000:4000
       - 4001:4001
-    # user: 1000:1000
-    restart: always
-    command: ["bash", "init.sh"]
 volumes:
   dependencies: {}
 

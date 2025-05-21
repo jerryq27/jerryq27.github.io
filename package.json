@@ -1,0 +1,24 @@
+{
+  "name": "jprojects-site",
+  "version": "1.0.0",
+  "description": "A place for me to talk about my projects, document the work process, and share what I've learned.   [Link](https://jerryq27.github.io)",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindcss": "./node_modules/.bin/tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerryq27/jerryq27.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerryq27/jerryq27.github.io/issues"
+  },
+  "homepage": "https://github.com/jerryq27/jerryq27.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}

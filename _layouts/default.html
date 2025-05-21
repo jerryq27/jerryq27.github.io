@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html>
-
+<html id="base">
     {% include head.html %}
-
-    <div class="page-content"></div>
-
+    <div class="bg-white dark:bg-gray-800">
         <body>
             {% include header.html %}
-
             <div class="wrap">
                 {{ content }}
             </div>
-
             {% include footer.html %}
         </body>
-
     </div>
 </html>

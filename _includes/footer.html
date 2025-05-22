@@ -1,25 +1,16 @@
-<div class="footer clearfix">
-    <div class="col-md-6">
-        Made with <i class="fas fa-heart"></i> by <a href="{{ site.twitter_link }}">Gerardo Quintero</a>
-    </div>
-    <div class="col-md-6">
-        <a href="{{ site.github_repository }}">&lt;/&gt;</a> on <a href="{{ site.github_link }}">GitHub</a>
-    </div>
+{% assign socials = site.data.socials %}
+
+<div id="footer" class="flex-1 flex justify-between text-sm">
+  <div class="mt-auto px-4 py-2">
+    Made with <i class="fa-solid fa-heart fa-fw text-rose-500"></i> by <a href="{{ socials.linkedin.link }}">Gerardo (Jerry) Quintero</a>
+  </div>
+  <div class="mt-auto px-4 py-2">
+    <a href="{{ site.github_repository }}"><i class="fa-solid fa-code fa-fw"></i></a> on <a href="{{ socials.github.link }}">GitHub</a>
+  </div>
 </div>
 
-<script type="text/javascript">
-  const btnToggleTheme = document.getElementById("theme-toggle");
-  btnToggleTheme.onclick = () => {
-    if(localStorage.getItem("theme") == "light") {
-      localStorage.setItem("theme", "dark");
-      document.documentElement.dataset.theme = "dark";
-    }
-    else {
-      localStorage.setItem("theme", "light");
-      document.documentElement.dataset.theme = "light";
-    }
-  };
-</script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
+<script src="https://kit.fontawesome.com/ae05e64187.js" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/js/typeit.min.js"></script>
 <script type="text/javascript">
     if(window.location.pathname === "/") {

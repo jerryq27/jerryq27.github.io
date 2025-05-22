@@ -1,20 +1,21 @@
-- name: X
+x-twitter:
+  name: X
   icon: "fa-x-twitter"
   link: "https://www.twitter.com/jerryq27"
-
-- name: LinkedIn
+linkedin:
+  name: LinkedIn
   icon: "fa-linkedin"
   link: "https://www.linkedin.com/in/gerardo-quintero-3aab4010a/"
-
-- name: GitHub
+github:
+  name: GitHub
   icon: "fa-github"
   link: "https://github.com/jerryq27"
-
-- name: "Stack Overflow"
+stack-overflow:
+  name: "Stack Overflow"
   icon: "fa-stack-overflow"
   link: "https://stackoverflow.com/users/4052494/jerryq27"
-
-- name: Instagram
+instagram:
+  name: Instagram
   icon: "fa-instagram"
   link: "https://www.instagram.com/jerryq27"
 

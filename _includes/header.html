@@ -1,16 +1,9 @@
-{% include sidebar.html %}
-<nav id="my-menu">
-  <div>
-    <div>{{ site.title }}<i id="back-button" class="fa fa-arrow-left"></i></div>
+{% assign theme = site.data.colors %}
 
-    <ul class="pages">
-      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="{{ site.baseurl }}/posts/" class="disabled-link"><i class="fa fa-archive"></i><strike>All Projects</strike></a></li>
-      <li><a href="{{ site.baseurl }}/search/" class="disabled-link"><i class="fa fa-search"></i><strike>Search</strike></a></li>
-    </ul>
+<div id="header" class="flex-1 flex border border-red-100">
+  {% include breadcrumbs.html %}
 
-    {% include social_links.html %}
-  </div>
-</nav>
-<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
-
+  <button id="theme-toggle" class="flex-1 {{ theme.icon-button }}">
+    <i class="fa-solid fa-sun fa-fw fa-xl"></i>
+  </button>
+</div>

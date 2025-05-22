@@ -1,6 +1,6 @@
 - name: Home
   icon: "fa-house"
-  link: ""
+  link: "/"
 
 - name: About
   icon: "fa-circle-info"

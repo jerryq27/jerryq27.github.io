@@ -1,0 +1,11 @@
+{% assign theme = site.data.colors %}
+
+<div id="breadcrumbs" class="flex-9 my-auto px-8 text-lg">
+  <a class="{{ theme.link }}" href="{{ site.baseurl }}/">~</a>
+  {% if page.url != '/' %}
+    {% assign crumbs = page.url | split: '/' | where_exp: 'crumb', 'crumb != ""' %}
+    {% for crumb in crumbs %}
+      &#47;<a class="{{ theme.link }}">{{ page.slug }}</a>
+    {% endfor %}
+  {% endif %}
+</div>

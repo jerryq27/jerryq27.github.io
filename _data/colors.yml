@@ -4,6 +4,7 @@ border: "border-2 border-gray-900 dark:border-gray-400"
 header: ""
 header-link: "hover:text-sky-500 transition duration-300 delay-100"
 text: "text-gray-900 dark:text-gray-400"
-link: "hover:text-sky-500"
+link: "hover:text-sky-500 hover:underline"
 page-link: "border border-transparent hover:border-sky-500 hover:bg-stone-300 hover:dark:bg-stone-800 transition duration-300 delay-100 rounded-lg mb-1"
+icon-button: "cursor-pointer hover:text-sky-500 transition duration-300 delay-100"
 

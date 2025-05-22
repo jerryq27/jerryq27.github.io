@@ -1,10 +1,14 @@
-<div id="sidebar" class="w-1/6 {{ site.data.colors.background-offset }} p-8">
+{% assign theme = site.data.colors %}
+
+<div id="sidebar" class="w-1/6 border-r border-gray-900 dark:border-gray-400 {{ theme.background-secondary }} p-8">
   <div class="text-center mb-4">
-    <a class="text-4xl font-bold" href="{{ site.baseurl }}">{{ site.title }}</a>
+    <a class="text-4xl font-bold {{ theme.header-link }}" href="{{ site.baseurl }}">{{ site.title }}</a>
   </div>
 
   <div class="flex justify-center mb-4">
-    <img src="{{ site.title_image }}" class="rounded-full {{ site.data.colors.border }}" height="150" width="150" alt="{{ site.title }}" />
+    <a href="{{ site.baseurl }}/about">
+      <img src="{{ site.title_image }}" class="rounded-full hover:border-sky-500 transition duration-300 delay-100 {{ theme.border }}" height="150" width="150" alt="{{ site.title }}" />
+    </a>
   </div>
 
   {% include social_links.html %}
@@ -13,8 +17,8 @@
 
   <ul class="text-lg px-4">
     {% for pg in site.data.pages %}
-    <li class="{{ site.data.colors.page-link }}">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}{{ pg.link }}">
+    <li class="{{ theme.page-link }}">
+      <a class="flex gap-x-2 p-2 items-center justify-center" href="{{ site.baseurl }}{{ pg.link }}">
         <i class="flex-1 fa-solid {{ pg.icon }} fa-fw"></i>
         <span class="flex-3">{{ pg.name | upcase }}</span>
       </a>

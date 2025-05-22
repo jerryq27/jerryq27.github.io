@@ -1,53 +1,25 @@
-<div id="sidebar" class="w-1/6 bg-blue-200 p-8">
-  <div class="text-center">
+<div id="sidebar" class="w-1/6 {{ site.data.colors.background-offset }} p-8">
+  <div class="text-center mb-4">
     <a class="text-4xl font-bold" href="{{ site.baseurl }}">{{ site.title }}</a>
   </div>
 
-  <div class="flex justify-center">
-    <img src="{{ site.title_image }}" class="rounded-full" height="150" width="150" alt="{{ site.title }}" />
+  <div class="flex justify-center mb-4">
+    <img src="{{ site.title_image }}" class="rounded-full {{ site.data.colors.border }}" height="150" width="150" alt="{{ site.title }}" />
   </div>
 
   {% include social_links.html %}
 
-  <h1 class="text-center italic">{{ site.description }}</h1>
+  <h1 class="text-center italic mb-4">{{ site.description }}</h1>
 
-  <ul class="text-lg">
-    <li class="page-item border border-black-100 px-2">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}">
-        <i class="flex-1 fa-solid fa-house fa-fw"></i>
-        <span class="flex-3">{{ "Home" | upcase }}</span>
+  <ul class="text-lg px-4">
+    {% for pg in site.data.pages %}
+    <li class="{{ site.data.colors.page-link }}">
+      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}{{ pg.link }}">
+        <i class="flex-1 fa-solid {{ pg.icon }} fa-fw"></i>
+        <span class="flex-3">{{ pg.name | upcase }}</span>
       </a>
     </li>
-    <li class="page-item border border-black-100 px-2">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}/about">
-        <i class="flex-1 fa-solid fa-circle-info fa-fw"></i>
-        <span class="flex-3">{{ "About" | upcase }}</span>
-      </a>
-    </li>
-    <li class="page-item border border-black-100 px-2">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}/resume">
-        <i class="flex-1 fa-solid fa-circle-user fa-fw"></i>
-        <span class="flex-3">{{ "Resume" | upcase }}</span>
-      </a>
-    </li>
-    <li class="page-item border border-black-100 px-2">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}/projects">
-        <i class="flex-1 fa-solid fa-code fa-fw"></i>
-        <span class="flex-3">{{ "Projects" | upcase }}</span>
-      </a>
-    </li>
-    <li class="page-item border border-black-100 px-2">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}/demos">
-        <i class="flex-1 fa-solid fa-rocket fa-fw"></i>
-        <span class="flex-3">{{ "Demos" | upcase }}</span>
-      </a>
-    </li>
-    <li class="page-item border border-black-100 px-2">
-      <a class="flex gap-x-2 items-center justify-center" href="{{ site.baseurl }}/stories">
-        <i class="flex-1 fa-solid fa-comment fa-fw"></i>
-        <span class="flex-3">{{ "Stories" | upcase }}</span>
-      </a>
-    </li>
+    {% endfor %}
   </ul>
 </div>
 

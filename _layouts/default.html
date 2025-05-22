@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html id="base">
-    {% include head.html %}
-    <div class="bg-white dark:bg-gray-800">
-        <body>
-            {% include header.html %}
-            <div class="wrap">
-                {{ content }}
-            </div>
-            {% include footer.html %}
-        </body>
+<html id="base" class="w-full h-full">
+  {% include head.html %}
+  <body class="w-full h-full flex bg-white dark:bg-gray-800 dark:text-gray-400">
+    {% include header.html %}
+    <div class="flex flex-col">
+      <button id="theme-toggle" class="cursor-pointer">Toggle</button>
+      {{ content }}
+      {% include footer.html %}
     </div>
+  </body>
 </html>

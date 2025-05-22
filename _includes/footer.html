@@ -7,6 +7,19 @@
     </div>
 </div>
 
+<script type="text/javascript">
+  const btnToggleTheme = document.getElementById("theme-toggle");
+  btnToggleTheme.onclick = () => {
+    if(localStorage.getItem("theme") == "light") {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.dataset.theme = "dark";
+    }
+    else {
+      localStorage.setItem("theme", "light");
+      document.documentElement.dataset.theme = "light";
+    }
+  };
+</script>
 <script src="{{ site.baseurl }}/js/typeit.min.js"></script>
 <script type="text/javascript">
     if(window.location.pathname === "/") {
@@ -29,24 +42,5 @@
         }).go();
         console.log(document.readyState);
     }
-</script>
-<script type="text/javascript">
-  if(localStorage.getItem("theme") === null) {
-    localStorage.setItem("theme", "light");
-    document.getElementById('base').dataset.theme = "light";
-  }
-
-  const btnToggleTheme = document.getElementById("theme-toggle");
-  btnToggleTheme.onclick = () => {
-    console.log("click!");
-    if(localStorage.getItem("theme") == "light") {
-      localStorage.setItem("theme", "dark");
-      document.getElementById('base').dataset.theme = "dark";
-    }
-    else {
-      localStorage.setItem("theme", "light");
-      document.getElementById('base').dataset.theme = "light";
-    }
-  };
 </script>
 

@@ -1,0 +1,8 @@
+background: "bg-stone-100 dark:bg-stone-950"
+background-offset: "bg-stone-200 dark:bg-stone-900"
+border: "border-2 border-gray-900 dark:border-gray-400"
+headers: ""
+text: "text-gray-900 dark:text-gray-400"
+link: "hover:text-sky-500"
+page-link: "border border-transparent hover:bg-stone-300 hover:dark:bg-stone-800 hover:border-sky-500 transition duration-300 delay-100 rounded-lg p-2 mb-1"
+

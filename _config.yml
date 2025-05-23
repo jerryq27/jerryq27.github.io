@@ -11,6 +11,14 @@ google_analytics: ""
 github_repository: https://github.com/jerryq27/jerryq27.github.io
 post_limit: 5
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+  demos:
+    output: true
+    permalink: /:collection/:name
+
 # Build settings
 markdown: kramdown
 

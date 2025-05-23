@@ -10,6 +10,7 @@ tags:
  - developer's
  - first
  - post
+is_featured: true
 ---
 
 Hey everyone!

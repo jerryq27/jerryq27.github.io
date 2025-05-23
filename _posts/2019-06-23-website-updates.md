@@ -4,6 +4,7 @@ title: Website Updates
 date: 2019-06-23 21:47:45
 categories: development blog
 thumbnail: code
+is_featured: true
 ---
 
 To start off, I really like the [Carte Noire] theme. I have a weakness for dark themes,

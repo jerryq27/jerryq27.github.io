@@ -8,7 +8,7 @@ services:
     user: "1000:1000"
     volumes:
       - ./:/home/webdev/app/
-      - dependencies:/usr/local/bundle
+      - dependencies:/home/webdev/.gem
     ports:
       - 4000:4000
       - 4001:4001

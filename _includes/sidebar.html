@@ -13,11 +13,11 @@
 
   {% include social_links.html %}
 
-  <h1 class="text-center italic mb-4">{{ site.description }}</h1>
+  <h1 class="{{ theme.text-secondary }} text-center italic mb-4">{{ site.description }}</h1>
 
   <ul class="text-lg px-4">
     {% for pg in site.data.pages %}
-    <li class="{{ theme.page-link }}">
+    <li class="{{ theme.sidebar-link }}">
       <a class="flex gap-x-2 p-2 items-center justify-center" href="{{ site.baseurl }}{{ pg.link }}">
         <i class="flex-1 fa-solid {{ pg.icon }} fa-fw"></i>
         <span class="flex-3">{{ pg.name | upcase }}</span>

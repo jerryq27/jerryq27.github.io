@@ -1,23 +1,24 @@
 background-primary: >-
   bg-stone-100
-  dark:bg-stone-950
+  dark:bg-zinc-900
 background-primary-with-hover: >-
   bg-stone-100
-  dark:bg-stone-950
+  dark:bg-zinc-900
   transition
   duration-300
   delay-100
 background-secondary: >-
   bg-stone-200
-  dark:bg-stone-900
+  dark:bg-zinc-950
 background-secondary-with-hover: >-
   bg-stone-200
   hover:bg-stone-300
-  dark:bg-stone-900
-  dark:hover:bg-stone-800
+  dark:bg-zinc-950
+  dark:hover:bg-zinc-900
   transition
   duration-300
   delay-100
+
 text-primary: >-
   text-gray-900
   dark:text-gray-400
@@ -40,7 +41,7 @@ sidebar-link: >-
   rounded-lg
   hover:border-sky-500
   hover:bg-stone-300
-  dark:hover:bg-stone-800
+  dark:hover:bg-zinc-900
   transition
   duration-300
   delay-100

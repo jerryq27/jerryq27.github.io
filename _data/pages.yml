@@ -18,7 +18,7 @@
   icon: "fa-rocket"
   link: "/demos"
 
-- name: Stories
+- name: Posts
   icon: "fa-comment"
-  link: "/stories"
+  link: "/posts"
 

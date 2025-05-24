@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
+{% assign theme = site.data.colors %}
 
-<h2 class="text-xl">{{ page.title }}</h2>
-<div class="border border-rose-200">
-  {{ content }}
+<div id="page" class="h-full p-4 border border-rose-200">
+  <h2 class="{{ theme.page-header-text }}">{{ page.title }}</h2>
+  <div id="page-content">
+    {{ content }}
+  </div>
 </div>

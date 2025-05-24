@@ -3,19 +3,23 @@ layout: default
 ---
 {% assign theme = site.data.colors %}
 
-<div class="h-full flex flex-col border border-rose-500">
-  <div class="flex-1 text-center py-8">
+<div class="h-full flex flex-col">
+  <div class="text-center py-8">
     <h2 class="{{ theme.page-header-text }}">Featured Stories</h2>
     <ul class="flex justify-evenly py-8">
       {% for post in site.posts limit: site.post_limit %}
         {% if post.is_featured %}
-          {% include featured-post.html title=post.title excerpt=post.excerpt date=post.date %}
+          {% include featured-post.html
+              title=post.title
+              excerpt=post.excerpt
+              url=post.url
+              date=post.date %}
         {% endif %}
       {% endfor %}
     </ul>
   </div>
 
-  <div class="flex-1 text-center">
+  <div class="text-center">
     <h2 class="{{ theme.page-header-text }}">🛠️ Featured Projects 🛠️</h2>
     <ul>
       <li>Sample Project 1 🥚</li>

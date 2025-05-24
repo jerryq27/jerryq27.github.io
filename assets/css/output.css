@@ -230,6 +230,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .ml-auto {
+    margin-left: auto;
+  }
   .block {
     display: block;
   }
@@ -259,6 +262,9 @@
   }
   .flex-1 {
     flex: 1;
+  }
+  .flex-2 {
+    flex: 2;
   }
   .flex-3 {
     flex: 3;
@@ -307,6 +313,15 @@
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
+  }
+  .place-self-end {
+    place-self: end;
+  }
+  .self-end {
+    align-self: flex-end;
+  }
+  .justify-self-end {
+    justify-self: flex-end;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -368,11 +383,32 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .ps-2 {
+    padding-inline-start: calc(var(--spacing) * 2);
+  }
+  .pe-2 {
+    padding-inline-end: calc(var(--spacing) * 2);
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pr-4 {
+    padding-right: calc(var(--spacing) * 4);
+  }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
   .text-center {
     text-align: center;
   }
   .text-left {
     text-align: left;
+  }
+  .text-right {
+    text-align: right;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -597,6 +633,22 @@
   .dark\:text-stone-500 {
     &:where([data-theme=dark], [data-theme=dark] *) {
       color: var(--color-stone-500);
+    }
+  }
+  .dark\:selection\:bg-gray-400\/20 {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      & *::selection {
+        background-color: color-mix(in srgb, oklch(70.7% 0.022 261.325) 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-gray-400) 20%, transparent);
+        }
+      }
+      &::selection {
+        background-color: color-mix(in srgb, oklch(70.7% 0.022 261.325) 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-gray-400) 20%, transparent);
+        }
+      }
     }
   }
   .dark\:selection\:bg-slate-400\/20 {

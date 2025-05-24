@@ -4,7 +4,7 @@ title: Hangman II
 date: 2019-07-01 22:43:22
 categories: development mobile flutter
 thumbnail: gamepad
-is_featured: false
+is_featured: true
 ---
 
 [Part 1]

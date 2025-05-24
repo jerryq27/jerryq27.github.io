@@ -1,16 +1,14 @@
 ---
-layout:     post
-title:      Hello Jekyll!
-date:       2019-01-27 18:47:24
-author:     Jerry Quintero
+layout: post
+title: Hello Jekyll!
+date: 2019-01-27 18:47:24
 categories: jekyll personal
-thumbnail:  smile-beam
+thumbnail: smile-beam
+is_featured: true
 tags:
  - blog
- - developer's
  - first
  - post
-is_featured: true
 ---
 
 Hey everyone!

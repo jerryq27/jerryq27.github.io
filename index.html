@@ -6,8 +6,8 @@ layout: default
 <div class="h-full flex flex-col">
   <div class="text-center py-8">
     <h2 class="{{ theme.page-header-text }}">Featured Stories</h2>
-    <ul class="flex justify-evenly py-8">
-      {% for post in site.posts limit: site.post_limit %}
+    <ul class="flex flex-wrap justify-evenly py-8">
+      {% for post in site.posts %}
         {% if post.is_featured %}
           {% include featured-post.html
               title=post.title

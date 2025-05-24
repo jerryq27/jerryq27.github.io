@@ -1,10 +1,10 @@
 {% assign theme = site.data.colors %}
 
-<div class="{{ theme.background-secondary-with-hover }} p-4 max-w-1/3 border rounded-lg border-stone-700 shadow-lg text-left cursor-pointer">
-  <h2 class="{{ theme.header }}">{{ include.title }}</h2>
-  <p class="{{ theme.text-secondary }}">{{ include.excerpt | strip_html | truncatewords: 30 }}</p>
+<div class="{{ theme.background-secondary-with-hover }} p-4 max-w-1/3 border rounded-lg border-zinc-700 shadow-xl text-left cursor-pointer">
+  <h2 class="{{ theme.header }} mb-2">{{ include.title }}</h2>
+  <p class="{{ theme.text-secondary }} mb-2">{{ include.excerpt | strip_html | truncatewords: 30 }}</p>
   <p class="{{ theme.text-secondary }}">
     <i class="fa-solid fa-calendar-days fa-fw"></i>
-    {{ include.date }}
+    {{ include.date | date_to_string: "ordinal", "US" }}
   </p>
 </div>

@@ -1,15 +1,59 @@
-background-primary: "bg-stone-100 dark:bg-stone-950"
-background-secondary: "bg-stone-200 dark:bg-stone-900"
-background-primary-with-hover: "bg-stone-100 dark:bg-stone-950 transition duration-300 delay-100"
-background-secondary-with-hover: "bg-stone-200 hover:bg-stone-300 dark:bg-stone-900 dark:hover:bg-stone-800 transition duration-300 delay-100"
-text-primary: "text-gray-900 dark:text-gray-400"
-text-secondary: "text-gray-700 dark:text-gray-500"
+background-primary: >-
+  bg-stone-100
+  dark:bg-stone-950
+background-primary-with-hover: >-
+  bg-stone-100
+  dark:bg-stone-950
+  transition
+  duration-300
+  delay-100
+background-secondary: >-
+  bg-stone-200
+  dark:bg-stone-900
+background-secondary-with-hover: >-
+  bg-stone-200
+  hover:bg-stone-300
+  dark:bg-stone-900
+  dark:hover:bg-stone-800
+  transition
+  duration-300
+  delay-100
+text-primary: >-
+  text-gray-900
+  dark:text-gray-400
+text-secondary: >-
+  text-gray-700
+  dark:text-gray-500
 
-link: "hover:text-sky-500 hover:underline"
-header-link: "hover:text-sky-500 transition duration-300 delay-100"
-sidebar-link: "border border-transparent hover:border-sky-500 hover:bg-stone-300 dark:hover:bg-stone-800 transition duration-300 delay-100 rounded-lg mb-1"
-
-border: "border-2 border-gray-900 dark:border-gray-400"
-header: "text-2xl"
-icon-button: "cursor-pointer hover:text-sky-500 transition duration-300 delay-100"
+link: >-
+  hover:text-sky-500
+  hover:underline
+header-link: >-
+  hover:text-sky-500
+  transition
+  duration-300
+  delay-100"
+sidebar-link: >-
+  mb-1
+  border
+  border-transparent
+  rounded-lg
+  hover:border-sky-500
+  hover:bg-stone-300
+  dark:hover:bg-stone-800
+  transition
+  duration-300
+  delay-100
+border: >-
+  border-2
+  border-gray-900
+  dark:border-gray-400
+header: >-
+  text-2xl
+icon-button: >-
+  cursor-pointer
+  hover:text-sky-500
+  transition
+  duration-300
+  delay-100"
 

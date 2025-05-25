@@ -7,7 +7,11 @@
 
   <div class="flex justify-center mb-4">
     <a href="{{ site.baseurl }}/about">
-      <img src="{{ site.title_image }}" class="rounded-full hover:border-sky-500 transition duration-300 delay-100 {{ theme.border }}" height="150" width="150" alt="{{ site.title }}" />
+      <img src="{{ site.title_image }}"
+        class="rounded-full hover:border-sky-500 transition duration-300 delay-100 {{ theme.border }}"
+        height="150"
+        width="150"
+        alt="{{ site.title }}" />
     </a>
   </div>
 
@@ -18,9 +22,9 @@
   <ul class="text-lg px-4">
     {% for pg in site.data.pages %}
     <li class="{{ theme.sidebar-link }}">
-      <a class="flex gap-x-2 p-2 items-center justify-center" href="{{ site.baseurl }}{{ pg.link }}">
-        <i class="flex-1 fa-solid {{ pg.icon }} fa-fw"></i>
-        <span class="flex-3">{{ pg.name | upcase }}</span>
+      <a class="flex gap-x-2 py-2 px-4 items-center justify-center" href="{{ site.baseurl }}{{ pg.link }}">
+        <i class="fa-solid {{ pg.icon }} fa-fw"></i>
+        <span class="grow">{{ pg.name | upcase }}</span>
       </a>
     </li>
     {% endfor %}

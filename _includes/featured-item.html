@@ -9,7 +9,7 @@
         <i class="fa-solid fa-calendar-days fa-fw pr-6"></i>
         {{ include.date | date_to_string: "ordinal", "US" }}
       </span>
-      <i class="fa-solid fa-comment fa-fw"></i>
+      <i class="fa-solid {{ include.icon }} fa-fw"></i>
     </div>
   </div>
 </a>

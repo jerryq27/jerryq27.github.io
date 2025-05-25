@@ -1,11 +1,14 @@
+{% assign theme = site.data.colors %}
 {% assign socials = site.data.socials %}
 
 <div id="footer" class="h-full flex justify-between text-sm">
   <div class="mt-auto px-4 py-2">
-    Made with <i class="fa-solid fa-heart fa-fw text-rose-500"></i> by <a href="{{ socials.linkedin.link }}">Gerardo (Jerry) Quintero</a>
+    Made with <i class="fa-solid fa-heart fa-fw text-rose-500"></i> by
+    <a class="{{ theme.link }}" href="{{ socials.linkedin.link }}">Gerardo (Jerry) Quintero</a>
   </div>
   <div class="mt-auto px-4 py-2">
-    <a href="{{ site.github_repository }}"><i class="fa-solid fa-code fa-fw"></i></a> on <a href="{{ socials.github.link }}">GitHub</a>
+    <a class="{{ theme.link }}" href="{{ site.github_repository }}"><i class="fa-solid fa-code fa-fw"></i></a> on
+    <a class="{{ theme.link }}" href="{{ socials.github.link }}">GitHub</a>
   </div>
 </div>
 

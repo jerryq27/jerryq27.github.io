@@ -16,6 +16,7 @@ background-secondary-with-hover: >-
   hover:bg-stone-300
   dark:bg-stone-900
   dark:hover:bg-stone-800
+  cursor-pointer
   transition
   duration-300
   delay-100

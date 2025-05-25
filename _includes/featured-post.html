@@ -1,10 +1,15 @@
 {% assign theme = site.data.colors %}
 
-<a class="{{ theme.background-secondary-with-hover }} p-4 max-w-1/3 border rounded-lg border-zinc-700 shadow-xl text-left cursor-pointer" href="{{ include.url }}">
-  <h2 class="{{ theme.section-header-text }} mb-2">{{ include.title }}</h2>
-  <p class="{{ theme.text-secondary }} mb-2">{{ include.excerpt | strip_html | truncatewords: 30 }}</p>
-  <div class="{{ theme.text-secondary }} {{ theme.subheader-text }} flex">
-    <span class="grow"><i class="fa-solid fa-calendar-days fa-fw pr-6"></i>{{ include.date | date_to_string: "ordinal", "US" }}</span>
-    <i class="fa-solid fa-comment fa-fw"></i>
+<a class="basis-lg" href="{{ include.url }}">
+  <div class="{{ theme.background-secondary-with-hover }} flex flex-col gap-4 h-full p-4 border rounded-lg border-gray-700 shadow-xl text-left">
+    <h2 class="{{ theme.section-header-text }}">{{ include.title }}</h2>
+    <p class="{{ theme.text-secondary }} grow">{{ include.excerpt | strip_html | truncatewords: 30 }}</p>
+    <div class="{{ theme.text-secondary }} {{ theme.subheader-texts}} flex">
+      <span class="grow">
+        <i class="fa-solid fa-calendar-days fa-fw pr-6"></i>
+        {{ include.date | date_to_string: "ordinal", "US" }}
+      </span>
+      <i class="fa-solid fa-comment fa-fw"></i>
+    </div>
   </div>
 </a>

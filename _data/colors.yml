@@ -66,3 +66,13 @@ icon-button: >-
   duration-300
   delay-100"
 
+markdown: >-
+  prose
+  prose-neutral
+  prose-headings:text-gray-900
+  prose-headings:dark:text-gray-300
+  prose-p:text-gray-700
+  prose-p:dark:text-gray-400
+  prose-li:text-gray-700
+  prose-li:dark:text-gray-400
+

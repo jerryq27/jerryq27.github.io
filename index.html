@@ -10,7 +10,7 @@ layout: default
       <p class="italic">Nothing here..</p>
     {% else %}
       <div class="flex flex-wrap justify-center gap-4 p-4">
-        {% for post in site.posts | limit: 4 %}
+        {% for post in site.posts %}
           {% if post.is_featured %}
             {% include featured-item.html
                 title=post.title
@@ -31,7 +31,7 @@ layout: default
       <p class="italic">Nothing here..</p>
     {% else %}
       <div class="flex flex-wrap justify-center gap-4 p-4">
-        {% for project in site.projects | limit: 4 %}
+        {% for project in site.projects %}
           {% if project.is_featured %}
             {% include featured-item.html
                 title=project.title

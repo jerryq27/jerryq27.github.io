@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html class="w-full h-full">
+---
+---
 
-  {% assign theme = site.data.colors %}
+{% assign theme = site.data.colors %}
+<!DOCTYPE html>
+<html class="size-full">
+
   {% include head.html %}
 
-  <body class="w-full h-full flex dark:selection:bg-gray-400/20 {{ theme.background-primary }} {{ theme.text-primary }}">
+  <body class="size-full flex dark:selection:bg-gray-400/20 {{ theme.background-primary }} {{ theme.text-primary }}">
     {% include sidebar.html %}
+
     <div class="flex flex-col grow max-h-screen overflow-auto">
-      <div class="flex-1">{% include header.html %}</div>
-      <div class="flex-8">{{ content }}</div>
-      <div class="flex-1">{% include footer.html %}</div>
+      <header class="flex-1">{% include header.html %}</header>
+      <main class="flex-8">{{ content }}</main>
+      <footer class="flex-1">{% include footer.html %}</footer>
     </div>
+
   </body>
 
 </html>

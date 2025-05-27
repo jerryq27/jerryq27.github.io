@@ -73,6 +73,20 @@ markdown: >-
   prose-headings:dark:text-gray-300
   prose-p:text-gray-700
   prose-p:dark:text-gray-400
+  prose-em:text-gray-700
+  prose-em:dark:text-gray-400
+  prose-strong:text-gray-700
+  prose-strong:dark:text-gray-400
+  prose-a:text-gray-900
+  prose-a:dark:text-gray-300
+  prose-a:hover:text-sky-500
+  prose-a:hover:underline
   prose-li:text-gray-700
   prose-li:dark:text-gray-400
-
+  prose-img:mx-auto
+  prose-pre:rounded-lg
+  prose-code:text-lg
+  prose-code:text-gray-700
+  prose-code:dark:text-gray-400
+  max-w-[55vw]
+  mx-8 

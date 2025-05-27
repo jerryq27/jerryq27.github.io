@@ -6,31 +6,43 @@ layout: default
 <div class="h-full flex flex-col">
   <div class="text-center py-8 max-h-[45vh] overflow-auto">
     <h2 class="{{ theme.page-header-text }}">Featured Posts</h2>
-    <div class="flex flex-wrap justify-center gap-4 p-4">
-      {% for post in site.posts %}
-        {% if post.is_featured %}
-          {% include featured-item.html
-              title=post.title
-              excerpt=post.excerpt
-              icon='fa-comment'
-              url=post.url
-              date=post.date %}
-        {% endif %}
-      {% endfor %}
-    </div>
+    {% if site.posts.size == 0 %}
+      <p class="italic">Nothing here..</p>
+    {% else %}
+      <div class="flex flex-wrap justify-center gap-4 p-4">
+        {% for post in site.posts | limit: 4 %}
+          {% if post.is_featured %}
+            {% include featured-item.html
+                title=post.title
+                excerpt=post.excerpt
+                icon='fa-comment'
+                url=post.url
+                date=post.date %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
   <div class="text-center py-8 max-h-[45vh] overflow-auto">
-    <h2 class="{{ theme.page-header-text }}">🛠️ Featured Projects 🛠️</h2>
+    <h2 class="{{ theme.page-header-text }}">Featured Projects</h2>
     <div>
     {% if site.projects.size == 0 %}
       <p class="italic">Nothing here..</p>
+    {% else %}
+      <div class="flex flex-wrap justify-center gap-4 p-4">
+        {% for project in site.projects | limit: 4 %}
+          {% if project.is_featured %}
+            {% include featured-item.html
+                title=project.title
+                excerpt=project.excerpt
+                icon='fa-box-archive'
+                url=project.url
+                date=project.date %}
+          {% endif %}
+        {% endfor %}
+      </div>
     {% endif %}
     </div>
-    <ul>
-      <li>Sample Project 1 🥚</li>
-      <li>Sample Project 2 🕹️</li>
-      <li>Sample Project 3 🔮</li>
-    </ul>
   </div>
 </div>

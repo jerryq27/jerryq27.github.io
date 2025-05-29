@@ -5,7 +5,9 @@ layout: default
 
 <div id="page" class="h-full p-4">
   <div id="page-content" class="{{ theme.markdown }}">
-    <h1 class="{{ theme.page-header-text }}">{{ page.title }}</h1>
+    {% comment %}
+      <h1 class="{{ theme.page-header-text }}">{{ page.title }}</h1>
+    {% endcomment %}
     {{ content }}
   </div>
 </div>

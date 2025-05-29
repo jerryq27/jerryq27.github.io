@@ -1,6 +1,10 @@
 {% assign theme = site.data.colors %}
 
 <div id="header" class="h-full min-h-[10vh] flex">
+  <button id="menu-toggle" class="flex-1 lg:hidden {{ theme.icon-button }}">
+    <i class="fa-solid fa-bars fa-fw fa-xl"></i>
+  </button>
+
   {% include breadcrumbs.html %}
 
   <button id="theme-toggle" class="flex-1 {{ theme.icon-button }}">

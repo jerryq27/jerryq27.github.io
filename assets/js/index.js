@@ -1,5 +1,22 @@
 /**** Page ready functions, no libraries or dependencies. ****/
 
+document.addEventListener("DOMContentLoaded", () => {
+  const drawer = document.querySelector("#sidebar");
+  const overlay = document.querySelector("#overlay");
+
+  const toggleMenuButton = document.querySelector("#menu-toggle");
+  console.log(toggleMenuButton);
+  toggleMenuButton.addEventListener("click", () => {
+    drawer.classList.toggle("hidden");
+    drawer.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    drawer.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+  });
+});
 // Theme
 document.addEventListener("DOMContentLoaded", () => {
   if(localStorage.getItem("theme") === null) {

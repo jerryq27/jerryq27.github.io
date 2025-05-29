@@ -966,6 +966,11 @@
       }
     }
   }
+  .lg\:static {
+    @media (width >= 64rem) {
+      position: static;
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -990,6 +995,11 @@
     @media (width >= 64rem) {
       --tw-translate-x: calc(var(--spacing) * -0);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .lg\:translate-none {
+    @media (width >= 64rem) {
+      translate: none;
     }
   }
   .dark\:border-gray-400 {

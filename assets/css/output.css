@@ -862,6 +862,9 @@
   .text-rose-500 {
     color: var(--color-rose-500);
   }
+  .text-sky-500 {
+    color: var(--color-sky-500);
+  }
   .italic {
     font-style: italic;
   }

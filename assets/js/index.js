@@ -59,3 +59,32 @@ btnToggleTheme.onclick = () => {
   }
 };
 
+// Additional hover effects.
+document.addEventListener("DOMContentLoaded", () => {
+  const featuredItems = document.getElementsByClassName("featured_item");
+  if(featuredItems) {
+    const hoverEffects = [
+      "text-sky-500",
+      "transition",
+      "duration-300",
+      "delay-100",
+    ];
+    Object.values(featuredItems).forEach(featuredItem => {
+      const title = featuredItem.querySelector("h2");
+      const icon = featuredItem.querySelector("i.featured_item_icon");
+
+      featuredItem.addEventListener("mouseover", () => {
+        hoverEffects.forEach(effect => {
+          title.classList.add(effect);
+          icon.classList.add(effect);
+        });
+      });
+      featuredItem.addEventListener("mouseleave", () => {
+        hoverEffects.forEach(effect => {
+          title.classList.remove(effect);
+          icon.classList.remove(effect);
+        });
+      });
+    });
+  }
+});

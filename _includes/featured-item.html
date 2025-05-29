@@ -1,7 +1,12 @@
 {% assign theme = site.data.colors %}
 
-<a class="basis-lg" href="{{ include.url }}">
-  <div class="{{ theme.background-secondary-with-hover }} flex flex-col gap-4 h-full p-4 border rounded-lg border-gray-700 shadow-xl text-left">
+<a class="relative basis-lg min-h-[15vh]" href="{{ include.url }}">
+  {% if include.image %}
+  <img class="h-full absolute top-0 right-0 bottom-0 z-20 opacity-25"
+    src="{{ site.images }}/{{ include.image }}"
+    alt="Image for {{ include.title }}">
+  {% endif %}
+  <div class="{{ theme.background-secondary-with-hover }} z-30 flex flex-col gap-4 h-full p-4 border rounded-lg border-gray-700 shadow-xl text-left">
     <h2 class="{{ theme.section-header-text }}">{{ include.title }}</h2>
     <p class="{{ theme.text-secondary }} grow">{{ include.excerpt | strip_html | truncatewords: 30 }}</p>
     <div class="{{ theme.text-secondary }} {{ theme.subheader-texts}} flex">

@@ -5,6 +5,7 @@ date: 2019-01-27 18:47:24
 categories: jekyll personal
 thumbnail: smile-beam
 is_featured: true
+featured_image: github-default.png
 tags:
  - blog
  - first

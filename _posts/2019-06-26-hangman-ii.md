@@ -5,6 +5,7 @@ date: 2019-07-01 22:43:22
 categories: development mobile flutter
 thumbnail: gamepad
 is_featured: true
+featured_image: hangman-stage-2.png
 ---
 
 [Part 1]

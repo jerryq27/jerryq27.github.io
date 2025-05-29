@@ -15,6 +15,7 @@ layout: default
             {% include featured-item.html
                 title=post.title
                 excerpt=post.excerpt
+                image=post.featured_image
                 icon='fa-comment'
                 url=post.url
                 date=post.date %}
@@ -36,6 +37,7 @@ layout: default
             {% include featured-item.html
                 title=project.title
                 excerpt=project.excerpt
+                image=project.featured_image
                 icon='fa-box-archive'
                 url=project.url
                 date=project.date %}

@@ -5,6 +5,7 @@ date: 2019-02-02 02:58:45
 is_featured: true
 categories: [Project, WebDev]
 tags: [python, featured]
+featured_image: light-python-web-icon.png
 ---
 
 # HTTP Server

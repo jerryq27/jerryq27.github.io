@@ -5,6 +5,7 @@ date: 2019-02-02 02:58:45
 categories: development android
 thumbnail: rocket
 is_featured: true
+featured_image: null
 ---
 
 So, I recently got a spark of motivation. I've been watching developers

@@ -2,7 +2,7 @@
   {% for item in site.data.socials %}
   {% assign social = item[1] %}
   <a href="{{ social.link }}" target="_new">
-    <i class="fa-brands {{ social.icon }} fa-fw"></i>
+    <i class="fa-brands {{ social.icon }} fa-fw {{ social.hover }} transition duration-300 delay-100"></i>
   </a>
   {% endfor %}
 </p>

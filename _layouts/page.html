@@ -4,9 +4,13 @@ layout: default
 {% assign theme = site.data.colors %}
 
 <div id="page" class="h-full p-4">
+  {% if page.using_markdown %}
   <div id="page-content" class="{{ theme.markdown }}">
+  {% else %}
+  <div id="page-content">
+  {% endif %}
     {% comment %}
-      <h1 class="{{ theme.page-header-text }}">{{ page.title }}</h1>
+    <h1 class="{{ theme.page-header-text }}">{{ page.title }}</h1>
     {% endcomment %}
     {{ content }}
   </div>

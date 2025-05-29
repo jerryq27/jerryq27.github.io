@@ -2,6 +2,7 @@
 layout: page
 title: About
 slug: about
+using_markdown: true
 ---
 
 <img class="object-cover size-[30vh] rounded-full" src="{{site.baseurl}}/assets/img/jerry.jpeg" alt="Jerry" />

@@ -3,17 +3,18 @@ layout: page
 title: Resume
 slug: resume
 icon: fas fa-circle-user
+using_markdown: true
 ---
 
 # Gerardo (Jerry) Quintero
 
 ## Education
 
-**University of Nebraska at Kearney** 
+[University of Nebraska at Kearney](https://www.unk.edu/)
 
 : _Computer Science, Japanese (2013 - 2019)_
 
-**Saitama University**
+[Saitama University](https://en.saitama-u.ac.jp/)
 
 : _Japanese (2017 - 2018)_
 

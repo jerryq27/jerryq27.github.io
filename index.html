@@ -4,6 +4,21 @@ layout: default
 {% assign theme = site.data.colors %}
 
 <div class="h-full flex flex-col">
+
+  <div class="lg:hidden py-4">
+    <div class="flex justify-center mb-4">
+      <a href="{{ site.baseurl }}/about">
+        <img src="{{ site.title_image }}"
+          class="rounded-full hover:border-sky-500 transition duration-300 delay-100 {{ theme.border }}"
+          height="150"
+          width="150"
+          alt="{{ site.title }}" />
+      </a>
+    </div>
+
+    <h1 class="{{ theme.text-secondary }} text-center italic mb-4">{{ site.description }}</h1>
+  </div>
+
   <div class="text-center py-8 max-h-[45vh] overflow-auto">
     <h2 class="{{ theme.page-header-text }}">Featured Posts</h2>
     {% if site.posts.size == 0 %}

@@ -7,5 +7,19 @@ using_markdown: false
 
 {% assign theme = site.data.colors %}
 
-<div class="text-center text-3xl {{ theme.text-primary }}">🛠️ Under construction 🛠️</div>
+<div class="text-center text-3xl {{ theme.text-primary }}">
+  All Posts
+</div>
+
+<div class="flex flex-col mx-8 p-8 gap-2">
+{% for post in site.posts %}
+  {% include collection-item.html
+      title=post.title
+      excerpt=post.excerpt
+      image=post.featured_image
+      icon='fa-comment'
+      url=post.url
+      date=post.date %}
+{% endfor %}
+</div>
 

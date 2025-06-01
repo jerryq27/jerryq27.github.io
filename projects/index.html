@@ -3,9 +3,23 @@ layout: page
 title: Projects
 slug: projects
 using_markdown: false
+pagination:
+  enabled: true
+  permalink: /projects/:num/
+  collection: projects
+  per_page: 5
 ---
 
 {% assign theme = site.data.colors %}
 
-<div class="text-center text-3xl {{ theme.text-primary }}">🛠️ Under construction 🛠️</div>
-
+<div class="flex flex-col mx-8 p-8 gap-2">
+{% for project in site.projects %}
+  {% include collection-item.html
+      title=project.title
+      excerpt=project.excerpt
+      image=project.featured_image
+      icon='fa-box-archive'
+      url=project.url
+      date=project.date %}
+{% endfor %}
+</div>

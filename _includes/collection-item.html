@@ -1,0 +1,20 @@
+{% assign theme = site.data.colors %}
+
+<a class="featured_item min-h-[15vh]" href="{{ include.url }}">
+  <div class="{{ theme.background-secondary-with-hover }} relative flex flex-col gap-4 h-full p-4 border rounded-lg border-gray-700 shadow-xl text-left">
+    {% if include.image %}
+    <img class="h-full absolute top-0 right-0 bottom-0 opacity-25"
+      src="{{ site.images }}/{{ include.image }}"
+      alt="Image for {{ include.title }}">
+    {% endif %}
+    <h2 class="{{ theme.section-header-text }}">{{ include.title }}</h2>
+    <p class="{{ theme.text-secondary }} grow">{{ include.excerpt | strip_html | truncatewords: 20 }}</p>
+    <div class="{{ theme.text-secondary }} {{ theme.subheader-texts}} flex">
+      <span class="grow">
+        <i class="fa-solid fa-calendar-days fa-fw pr-6"></i>
+        {{ include.date | date_to_string: "ordinal", "US" }}
+      </span>
+      <i class="featured_item_icon fa-solid {{ include.icon }} fa-fw"></i>
+    </div>
+  </div>
+</a>
